@@ -1,4 +1,11 @@
 
+"""
+Code qui compte le nombre de mots dans un string
+Par Bradley Perreault
+Groupe 4567
+"""
+
+
 # compte le # de mots dans un string en comptant les nombres d`espaces
 def count_word(text: str):
     word_count = 0 # nombre de mots
@@ -15,5 +22,5 @@ def count_word(text: str):
     return word_count
 
 
-print("il y a " + str(count_word("des    mots   des  mots des     mots")) + " mots dans cette phrase")
+print("il y a " + str(count_word("   des    mots   des  mots des     mots")) + " mots dans cette phrase")
 
