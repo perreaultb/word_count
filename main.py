@@ -12,7 +12,7 @@ def count_word(text: str):
     in_word = False # pour que 2 espaces ne comptent pas comme 2 mots etc etc
 
     for letter in text:
-        if letter != " ":
+        if letter != " " and letter != "'":
             if not in_word: 
                 word_count += 1
                 in_word = True # assure que plus que 1 espaces n'est pas confus comme plus que 1 mot
@@ -22,5 +22,5 @@ def count_word(text: str):
     return word_count
 
 
-print("il y a " + str(count_word("   des    mots   des  mots des     mots")) + " mots dans cette phrase")
+print(f"il y a {count_word("   c'est des    mots   des  mots des     mots")} mots dans cette phrase")
 
